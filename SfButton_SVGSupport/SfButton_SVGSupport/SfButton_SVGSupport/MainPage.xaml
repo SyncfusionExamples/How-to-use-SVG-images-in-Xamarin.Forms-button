@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SfButton_SVGSupport"
+             xmlns:svg="clr-namespace:Xamarin.Forms.Svg;assembly=SvgImageSource"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="SfButton_SVGSupport.MainPage">
+
+    <StackLayout Orientation="Vertical" Margin="120">
+       <!--Setting svg in Image property-->
+        <buttons:SfButton BackgroundColor="##51E2F5" 
+                          BorderWidth="2" 
+                          BorderColor="Red" 
+                          HorizontalOptions="Center"
+                          VerticalOptions="Center"
+                          WidthRequest="100" >
+        <Image>
+            <Image.Source>
+                    <svg:SvgImageSource Source="Typogy1.svg" Width="40" Height="50" />
+            </Image.Source>
+        </Image>
+        </buttons:SfButton>
+        
+        <!--Setting svg along with button text-->
+        
+        <buttons:SfButton  
+            ShowIcon="True" 
+            HorizontalOptions="Center" 
+            VerticalOptions="Center"  
+            WidthRequest="150" 
+            HeightRequest="50"
+            Margin="0,50,0,0"
+            Text="Add to card">
+            <buttons:SfButton.ImageSource>
+                <svg:SvgImageSource Source="commerce-and-shopping.svg" Width="40" Height="50" Color="White"/>
+            </buttons:SfButton.ImageSource>
+        </buttons:SfButton>
+        
+        <!--Setting svg image as backgroud image of button-->
+        <buttons:SfButton 
+            TextColor="White"
+            WidthRequest="100"
+            HorizontalOptions="Center" 
+            VerticalOptions="Center" 
+            Margin="0,50,0,0"
+            Text="Login">
+            <buttons:SfButton.BackgroundImage>
+                <svg:SvgImageSource Source="background.svg" Width="40" Height="50" />
+            </buttons:SfButton.BackgroundImage>
+        </buttons:SfButton>
+    </StackLayout>
+
+</ContentPage>
