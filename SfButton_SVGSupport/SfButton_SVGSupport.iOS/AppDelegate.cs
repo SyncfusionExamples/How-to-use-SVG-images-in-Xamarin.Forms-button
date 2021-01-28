@@ -23,11 +23,10 @@ namespace SfButton_SVGSupport.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-
             Xamarin.Forms.Svg.iOS.SvgImage.Init();
-
+            Syncfusion.XForms.iOS.Border.SfBorderRenderer.Init();
+            Syncfusion.XForms.iOS.Buttons.SfButtonRenderer.Init();
             LoadApplication(new App());
-
             return base.FinishedLaunching(app, options);
         }
     }
