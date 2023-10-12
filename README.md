@@ -3,30 +3,17 @@
 
 Syncfusion Xamarin.Forms SfButton provides a support to get an elegant view in your application by setting background image and also display the button text along with the image. This article mainly explains how to use SVG image in it.
 
-
-
 ## Available features to achieve it
-
- 
-
 Image and ImageSource properties in Xamarin.Forms SfButton to display the image along with the text.
-
- 
 
 BackgroundImage property to display the background image of Xamarin.Forms SfButton.
 
- 
-
 ## Needed package
-
- 
-
 Xamarin.Forms.Svg provides SvgImageSource to add Xamarin.Forms ImageSource.
 
 ## How to use it in SfButton
 By setting the SvgImageSource to the available image support properties in SfButton, you can achieve this as shown in the following code snippet.
 
- 
 **[XAML]**
 
 ```
@@ -71,7 +58,7 @@ By setting the SvgImageSource to the available image support properties in SfBut
 
 Additional things to do that to make it render.
 
- In Android: Add Xamarin.Forms.Svg.Droid.SvgImage.Init(this).
+In Android: Add Xamarin.Forms.Svg.Droid.SvgImage.Init(this).
 
 **[C#]**
 
@@ -91,10 +78,8 @@ public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompa
 ```
 In iOS: Add Xamarin.Forms.Svg.iOS.SvgImage.Init().
 
- 
 **[C#]**
 
- 
 ```
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
